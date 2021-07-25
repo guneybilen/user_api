@@ -22,6 +22,6 @@ router.get("/routes", (req, res, next) => {
   res.send("<h1>List of routes.</h1>" + JSON.stringify(routes));
 });
 
-require("./users")(router);
+require("./user")(router);
 
 module.exports = router;
